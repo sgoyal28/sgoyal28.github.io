@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Shreya Goyal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .publications-page {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-lavender));
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(107, 91, 123, 0.2);
+        }
+        
+        .back-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(107, 91, 123, 0.3);
+        }
+        
+        .pub-section {
+            margin-bottom: 4rem;
+        }
+        
+        .pub-section h2 {
+            font-size: 2rem;
+            color: var(--heading-dark);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--pastel-lavender);
+            font-weight: 700;
+        }
+        
+        .pub-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--pastel-pink);
+        }
+        
+        .pub-item:nth-child(2n) {
+            border-left-color: var(--pastel-lavender);
+        }
+        
+        .pub-item:nth-child(3n) {
+            border-left-color: var(--pastel-mint);
+        }
+        
+        .pub-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .pub-item h3 {
+            font-size: 1.2rem;
+            color: var(--heading-dark);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+        
+        .pub-authors {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .pub-venue {
+            font-size: 1rem;
+            color: var(--primary-color);
+            font-style: italic;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pub-date {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            background: linear-gradient(135deg, var(--pastel-coral), var(--pastel-peach));
+            color: var(--white);
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .pub-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .pub-link:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html#home" class="nav-logo"></a>
+            <ul class="nav-menu">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#research" class="nav-link">Research</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Publications Content -->
+    <section class="publications-page section">
+        <div class="container">
+            <a href="index.html#publications" class="back-link">← Back to Home</a>
+            
+            <h1 class="section-title">Publications</h1>
+
+            <!-- Journal Published -->
+            <div class="pub-section">
+                <h2>Journal Publications</h2>
+                
+                <div class="pub-item">
+                    <span class="pub-date">July 2025</span>
+                    <h3>A Multi Relational Graph-based Approach for Stock Movement Prediction and Portfolio Optimization</h3>
+                    <p class="pub-authors">Manali Patel, <strong>Shreya Goyal</strong>, Krupa Jariwala, Chiranjoy Chattopadhyay</p>
+                    <p class="pub-venue">Neurocomputing</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">November 2023</span>
+                    <h3>Hybrid Self-supervised Learning-Based Architecture for Construction Progress Monitoring</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Varun Kumar Reja, Koshy Vargese, Balaraman Ravindran, Quang Ha</p>
+                    <p class="pub-venue">Automation in Construction</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">November 2023</span>
+                    <h3>FVCap: An Approach to Understand Scanned Floor Plan Images Using Deep Learning and Its Applications</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Chiranjoy Chattopadhyay, and Gaurav Bhatnagar</p>
+                    <p class="pub-venue">SN Computer Science</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">April 2023</span>
+                    <h3>Survey of Adversarial Robustness and Defenses in NLP</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Sumanth Doddapaneni, Mitesh Khapra, Balaraman Ravindran</p>
+                    <p class="pub-venue">ACM Computing Surveys</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">January 2022</span>
+                    <h3>GRIHA: Synthesizing 2-Dimensional Building Layouts from Images Captured using a Smart Phone</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Naimul Khan, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">Multimedia Tools and Applications</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">March 2021</span>
+                    <h3>Knowledge Driven Description Synthesis for Floor Plan Interpretation</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">International Journal on Document Analysis and Recognition</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">September 2019</span>
+                    <h3>SUGAMAN: Describing Floor Plans for Visually Impaired by Annotation Learning and Proximity based Sentence Model</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Satya Bhavsar, Shreya Patel, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">IET Image Processing</p>
+                </div>
+            </div>
+
+            <!-- Journal Submitted -->
+            <div class="pub-section">
+                <h2>Journal Submissions (Under Review)</h2>
+                
+                <div class="pub-item">
+                    <span class="pub-date">2025</span>
+                    <h3>Explainable Multimodal Feature Fusion Approach for Stock Market Movement Prediction</h3>
+                    <p class="pub-authors">Manali Patel, <strong>Shreya Goyal</strong>, Krupa Jariwala, Chiranjoy Chattopadhyay</p>
+                    <p class="pub-venue">IEEE Transactions on Emerging Topics in Computational Intelligence</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">2025</span>
+                    <h3>A Graph-based Multimodal Fusion Approach for Stock Movement Prediction</h3>
+                    <p class="pub-authors">Manali Patel, <strong>Shreya Goyal</strong>, Krupa Jariwala, Chiranjoy Chattopadhyay</p>
+                    <p class="pub-venue">Pattern Recognition</p>
+                </div>
+            </div>
+
+            <!-- Conference Publications -->
+            <div class="pub-section">
+                <h2>Conference Publications</h2>
+                
+                <div class="pub-item">
+                    <span class="pub-date">December 2025</span>
+                    <h3>Beyond the Ticker: Graph-Fused Stock Forecasting with Candlestick Chart, Temporal, and Relational Intelligence</h3>
+                    <p class="pub-authors">Manali Patel, <strong>Shreya Goyal</strong>, Krupa Jariwala, and Chiranjoy Chattopadhyay</p>
+                    <p class="pub-venue">ACM International Conference on Data Science (CODS), Pune, India</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">2025</span>
+                    <h3>Multi-step PLC Code Generation using LLMs: A Practical Framework for Industrial Applications</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Debasish Mishra, Yash Shah</p>
+                    <p class="pub-venue">Amazon Robotics Conference</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">December 2024</span>
+                    <h3>D2CTNet: An Approach to Detect Dynamics of Candlestick Charts and Technical Indicators for Stock Market</h3>
+                    <p class="pub-authors">Manali Patel, <strong>Shreya Goyal</strong>, Krupa Jariwala, Chiranjoy Chattopadhyay</p>
+                    <p class="pub-venue">CODS-COMAD</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">2024</span>
+                    <h3>InSaAF: Incorporating Safety through Accuracy and Fairness: Are LLMs Ready for the Indian Legal Domain?</h3>
+                    <p class="pub-authors">Yogesh Tripathi, Raghav Donakanti, Sahil Girhepuje, Ishan Kavathekar, Bhaskara Hanuma Vedula, Gokul S. Krishnan, <strong>Shreya Goyal</strong>, Anmol Goel, Balaraman Ravindran, and Ponnurangam Kumaraguru</p>
+                    <p class="pub-venue">37th International Conference on Legal Knowledge and Information Systems (JURIX)</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">January 2024</span>
+                    <h3>CookingINWild: Unleashing the Challenges of Indian Cuisine Cooking Videos for Action Recognition</h3>
+                    <p class="pub-authors">Sandeep Khanna, <strong>Shreya Goyal</strong>, Chiranjoy Chattopadhyay, and Suman Kundu</p>
+                    <p class="pub-venue">International Conference on Data Science and Management of Data (CODS-COMAD), Bangalore, India</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">July 2023</span>
+                    <h3>Towards Leaving No Indic Language Behind: Building Monolingual Corpora, Benchmark and Models for Indic Languages</h3>
+                    <p class="pub-authors">Sumanth Doddapaneni, Rahul Aralikatte, <strong>Shreya Goyal</strong>, Gowtham Ramesh, Mitesh M. Khapra, Anoop Kunchukuttan and Pratyush Kumar</p>
+                    <p class="pub-venue">ACL, Toronto, Canada</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">2023</span>
+                    <h3>Are Models Trained on Indian Legal Data Fair?</h3>
+                    <p class="pub-authors">Sahil Girhepuje, Anmol Goel, Gokul Krishnan, <strong>Shreya Goyal</strong>, Satyendra Pandey, Ponnurangam Kumaraguru, Balaram Ravindran</p>
+                    <p class="pub-venue">Symposium on AI and Law</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">December 2021</span>
+                    <h3>A Hybrid Network for Scanned Floor Plan Image Recognition and Room Labeling</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">International Conference on Pattern Recognition and Machine Intelligence, Kolkata, India</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">September 2020</span>
+                    <h3>LayART: Generating Indoor Layout using ARCore Transformations</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Naimul Khan, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">IEEE International Conference on Multimedia Big Data (BigMM)</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">September 2019</span>
+                    <h3>BRIDGE: Building Plan Repository for Image Description Generation, and Evaluation</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Vishesh Mistry, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">IAPR International Conference on Document Analysis and Recognition (ICDAR), Sydney, Australia (Oral)</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">September 2019</span>
+                    <h3>A Framework for the Conversion of Textual Big Data into 2D Architectural Floor Plan</h3>
+                    <p class="pub-authors">Mahak Jain, Anurag Sanyal, <strong>Shreya Goyal</strong>, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">1st International Workshop on Big Data in Culture, Design and Heritage, IEEE BigMM, Singapore</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">October 2018</span>
+                    <h3>ASYSST: A Framework for Synopsis Synthesis Empowering Visually Impaired</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">Workshop on Multimedia for Accessible Human Computer Interface, ACM Multimedia (MM 2018), Seoul, Korea</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">March 2018</span>
+                    <h3>Plan2Text: A Framework for Describing Building Floor Plan Images From First Person Perspective</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">IEEE Colloquium on Signal Processing and its Applications (CSPA 2018), Malaysia</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">March 2016</span>
+                    <h3>Image Thresholding based on Fuzzy Logics</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">International Conference on Recent Trends in Engineering and Material Sciences</p>
+                </div>
+            </div>
+
+            <!-- Book Chapters -->
+            <div class="pub-section">
+                <h2>Book Chapters</h2>
+                
+                <div class="pub-item">
+                    <span class="pub-date">May 2021</span>
+                    <h3>A Computational Approach to Understand Building Floor Plan Images using Machine Learning Techniques</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Gaurav Bhatnagar, Chiranjoy Chattopadhyay</p>
+                    <p class="pub-venue">In: Internet of Multimedia Things (IoMT): Techniques and Applications</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">January 2021</span>
+                    <h3>Noise Resilient Thresholding based on Fuzzy Logic and Non-linear Filtering</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Gaurav Bhatnagar, Chiranjoy Chattopadhyay</p>
+                    <p class="pub-venue">Machine Learning for Intelligent Multimedia Analytics: Techniques and Applications, Book Series - Studies in Big Data, Springer</p>
+                </div>
+            </div>
+
+            <!-- Patents -->
+            <div class="pub-section">
+                <h2>Patents</h2>
+                
+                <div class="pub-item">
+                    <span class="pub-date">April 2023</span>
+                    <h3>2D and 3D Floor Plan Generation</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Naimul Khan, Chiranjoy Chattopadhyay, Gaurav Bhatnagar, Srinivas Krishna, Laura Thomas, Daniel Chantal Mills</p>
+                    <p class="pub-venue">United States Utility Patent Application No. 17/482,111</p>
+                </div>
+            </div>
+
+            <!-- Other Publications -->
+            <div class="pub-section">
+                <h2>Other Publications & Preprints</h2>
+                
+                <div class="pub-item">
+                    <span class="pub-date">2024</span>
+                    <h3>Multi-lingual Document Processor (MDP) - Open Source Framework</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong> et al.</p>
+                    <p class="pub-venue">Open source document narration generation framework</p>
+                    <a href="https://github.com/aws-samples/sample-multi-lingual-document-processor" class="pub-link" target="_blank">View on GitHub →</a>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">2023</span>
+                    <h3>Key-phrase Boosted Unsupervised Summary Generation for FinTech Organization</h3>
+                    <p class="pub-authors">Aadit Deshpande, <strong>Shreya Goyal</strong>, Prateek Nagwanshi, Avinash Tripathy</p>
+                    <p class="pub-venue">arXiv preprint</p>
+                    <a href="https://arxiv.org/pdf/2310.10294.pdf" class="pub-link" target="_blank">View on arXiv →</a>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">2019</span>
+                    <h3>Semantic Understanding of Floor Plan Images through Machine Learning Techniques</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong></p>
+                    <p class="pub-venue">Doctoral Consortium, ICDAR 2019</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-date">2017</span>
+                    <h3>Automatic Textual Description Synthesis from Building Floor Plan Images</h3>
+                    <p class="pub-authors"><strong>Shreya Goyal</strong>, Chiranjoy Chattopadhyay, Gaurav Bhatnagar</p>
+                    <p class="pub-venue">IAPR Summer School on Document Analysis: Document Informatics, Jaipur, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Shreya Goyal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
