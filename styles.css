@@ -126,7 +126,7 @@ body {
 
 /* Background image support - add your image */
 .hero.with-background {
-    background-image: url('hero-background.jpg');
+    background-image: url('hero-background.JPG');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
