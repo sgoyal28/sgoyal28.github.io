@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>DS413 | Introduction to Statistical Learning</title>
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --accent: #2e6da4;
+      --bg: #ffffff;
+      --text: #333333;
+      --light-bg: #f7f9fb;
+      --border: #dde3ea;
+      --link: #2e6da4;
+      --link-hover: #1a3a5c;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px 24px 60px;
+    }
+
+    /* ---- Header ---- */
+    .header-banner {
+      background: var(--primary);
+      color: #fff;
+      padding: 32px 28px;
+      margin-bottom: 24px;
+      text-align: center;
+      border-radius: 6px;
+    }
+    .header-banner h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .header-logo {
+      height: 80px;
+      width: auto;
+      flex-shrink: 0;
+      background: #fff;
+      padding: 4px;
+      border-radius: 4px;
+    }
+    .header-text {
+      text-align: left;
+    }
+    .header-banner .semester {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+      margin-bottom: 28px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--border);
+    }
+    nav a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    nav a:hover { color: var(--link-hover); text-decoration: underline; }
+
+    /* ---- Sections ---- */
+    h2 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin: 32px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin: 24px 0 10px;
+    }
+
+    /* ---- Info list ---- */
+    .info-list { list-style: none; margin: 0 0 10px; }
+    .info-list li {
+      padding: 5px 0;
+      font-size: 0.95rem;
+    }
+    .info-list li strong { color: var(--primary); }
+    .placeholder {
+      background: #fff3cd;
+      border: 1px dashed #d4a843;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-style: italic;
+      font-size: 0.88rem;
+      color: #856404;
+    }
+
+    /* ---- TA list ---- */
+    .ta-list { margin: 8px 0 0 18px; }
+    .ta-list li { padding: 3px 0; font-size: 0.93rem; }
+
+    /* ---- Tables ---- */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: 0.9rem;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+      text-align: left;
+      padding: 10px 12px;
+      font-weight: 600;
+    }
+    td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: var(--light-bg); }
+    td a { color: var(--link); text-decoration: none; }
+    td a:hover { text-decoration: underline; }
+
+    /* ---- Textbooks ---- */
+    .textbooks { margin: 10px 0 0 18px; }
+    .textbooks li {
+      padding: 4px 0;
+      font-size: 0.93rem;
+    }
+
+    /* ---- Evaluation placeholder ---- */
+    .eval-grid {
+      display: grid;
+      grid-template-columns: 1fr 120px;
+      gap: 0;
+      max-width: 480px;
+      margin: 12px 0 20px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .eval-grid .eh {
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 12px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .eval-grid .ec {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .eval-grid .ec:nth-child(4n+3),
+    .eval-grid .ec:nth-child(4n+4) { background: var(--light-bg); }
+
+    /* ---- Footer ---- */
+    .feedback {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 2px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 640px) {
+      body { padding: 12px 14px 40px; }
+      .header-banner { padding: 22px 18px; }
+      .header-banner h1 { font-size: 1.35rem; }
+      table { font-size: 0.82rem; }
+      td, th { padding: 7px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-banner">
+    <div class="header-inner">
+      <img src="https://www.iitmandi.ac.in/images/logo_hires.png" alt="IIT Mandi Logo" class="header-logo">
+      <div class="header-text">
+        <h1>DS413 — Introduction to Statistical Learning</h1>
+        <span class="semester">DS413 | Odd Sem 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#evaluation">Evaluation</a>
+    <a href="#resources">Resources</a>
+    <a href="#tutorials">Tutorials</a>
+    <a href="#assignments">Assignments</a>
+    <a href="#textbooks">Textbooks</a>
+  </nav>
+
+  <!-- ============ COURSE INFO ============ -->
+  <h2 id="syllabus">Course Information</h2>
+  <ul class="info-list">
+    <li><strong>Instructor:</strong> Dr. Shreya Goyal (<a href="mailto:shreyagoyal@iitmandi.ac.in">shreyagoyal@iitmandi.ac.in</a>)</li>
+    <li><strong>Class Venue:</strong> <span class="placeholder">TBA</span></li>
+    <li><strong>Class Timings:</strong> A-slot</li>
+    <li><strong>Discussion Forum:</strong> <span class="placeholder">link TBA</span></li>
+    <li><strong>Syllabus:</strong> <a href="#" target="_blank">Link</a></li>
+  </ul>
+
+  <h3>Teaching Assistants</h3>
+  <ol class="ta-list">
+    <li>Richa Thakur (<a href="mailto:d23151@students.iitmandi.ac.in">d23151@students.iitmandi.ac.in</a>)</li>
+    <li>Ravi Shankar Prasad (<a href="mailto:d23033@students.iitmandi.ac.in">d23033@students.iitmandi.ac.in</a>)</li>
+    <li>Shagun Bhatt (<a href="mailto:d24136@students.iitmandi.ac.in">d24136@students.iitmandi.ac.in</a>)</li>
+    <li>Tarun Saini (<a href="mailto:d24151@students.iitmandi.ac.in">d24151@students.iitmandi.ac.in</a>)</li>
+    <li>Vandita Dutt (<a href="mailto:d22140@students.iitmandi.ac.in">d22140@students.iitmandi.ac.in</a>)</li>
+  </ol>
+
+  <!-- ============ EVALUATION ============ -->
+  <h2 id="evaluation">Evaluation</h2>
+  <div class="eval-grid">
+    <div class="eh">Component</div>
+    <div class="eh">Weightage</div>
+    <div class="ec">Assignments</div>
+    <div class="ec"><span class="placeholder">TBA</span></div>
+    <div class="ec">Tutorials / Quizzes</div>
+    <div class="ec"><span class="placeholder">TBA</span></div>
+    <div class="ec">Viva</div>
+    <div class="ec"><span class="placeholder">TBA</span></div>
+    <div class="ec">Midsem</div>
+    <div class="ec"><span class="placeholder">TBA</span></div>
+    <div class="ec">Endsem</div>
+    <div class="ec"><span class="placeholder">TBA</span></div>
+    <div class="ec">Attendance</div>
+    <div class="ec">As per institute norms</div>
+  </div>
+
+  <!-- ============ RESOURCES ============ -->
+  <h2 id="resources">Resources</h2>
+  <table>
+    <thead>
+      <tr><th>S.N</th><th>Topic</th><th>Slides</th><th>Notes</th><th>External References</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Introduction to Machine Learning</td>
+        <td><a href="#" target="_blank">Slides</a></td>
+        <td><a href="#" target="_blank">Notes</a></td>
+        <td><a href="#" target="_blank">References</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Matrices, Matrix Operations (Addition, Multiplication, etc.), Linear Independence and Vector Spaces</td>
+        <td><a href="#" target="_blank">Slides</a></td>
+        <td><a href="#" target="_blank">Notes</a></td>
+        <td><a href="#" target="_blank">References</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Eigenvalues and Eigenvectors, Rank of Matrix, Differentiation and Partial Differentiation</td>
+        <td><a href="#" target="_blank">Slides</a></td>
+        <td><a href="#" target="_blank">Notes</a></td>
+        <td><a href="#" target="_blank">References</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ============ RECORDED LECTURES ============ -->
+  <h2>Recorded Lectures</h2>
+  <table>
+    <thead><tr><th>S.N</th><th>Recording</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><a href="#" target="_blank">Lecture Recording 1</a></td></tr>
+      <tr><td>2</td><td><a href="#" target="_blank">Lecture Recording 2</a></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ============ TUTORIALS ============ -->
+  <h2 id="tutorials">Tutorials</h2>
+  <table>
+    <thead><tr><th>S.N</th><th>Material</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><a href="#" target="_blank">Tutorial 1</a></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ============ ASSIGNMENTS ============ -->
+  <h2 id="assignments">Assignments</h2>
+  <table>
+    <thead><tr><th>S.N</th><th>Assignment</th><th>Release Date</th><th>Submission Date</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="placeholder">TBA</span></td><td><span class="placeholder">TBA</span></td><td><span class="placeholder">TBA</span></td></tr>
+      <tr><td>2</td><td><span class="placeholder">TBA</span></td><td><span class="placeholder">TBA</span></td><td><span class="placeholder">TBA</span></td></tr>
+      <tr><td>3</td><td><span class="placeholder">TBA</span></td><td><span class="placeholder">TBA</span></td><td><span class="placeholder">TBA</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- ============ TEXTBOOKS ============ -->
+  <h2 id="textbooks">Textbooks</h2>
+  <ol class="textbooks">
+    <li>Pattern Recognition and Machine Learning — Christopher Bishop
+      <a href="https://drive.google.com/file/d/1Zaiys5Dz54ok6oBOIeBksPUGixnovzyg/view?usp=sharing" target="_blank">[Link]</a></li>
+    <li>Introduction to Machine Learning — Ethem Alpaydin
+      <a href="https://drive.google.com/file/d/13gyN53d6XJaJqw1Gzg54TI4EDJRdFfRR/view?usp=sharing" target="_blank">[Link]</a></li>
+    <li>The Elements of Statistical Learning — Trevor Hastie, Robert Tibshirani, Jerome Friedman
+      <a href="https://drive.google.com/file/d/16t_hwcENGCknNOs2ZRx-rk1tY09XIaMq/view?usp=sharing" target="_blank">[Link]</a></li>
+  </ol>
+
+
+
+</body>
+</html>
